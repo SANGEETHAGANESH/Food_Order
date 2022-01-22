@@ -1,0 +1,30 @@
+
+input{
+    box-sizing: border-box;
+    border: none;
+   
+    border-bottom:2px solid grey;
+    color:grey;
+    width:95%;
+    margin-bottom:20px;
+    margin-left:10px;
+    font-style: italic;
+   }
+   label{
+    font-size:20px;
+    margin-left:10px;
+    color:black;
+    font-style: italic;
+   }
+   button{
+    height:40px; border-radius:10px; font-style: italic;
+    justify-content:center;width:130px;
+        }
+    input:focus{
+        border-bottom:2px solid grey;
+        border:0;
+    }
+    p{
+        font-size:20px;
+        font-style: italic;
+       }

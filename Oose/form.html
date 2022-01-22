@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+          function check()
+        {
+            var email=document.getElementById("email").value;
+            var pw=document.getElementById("new").value;
+            var cw=document.getElementById("confirm").value;
+            if(email.indexOf("@")<0)
+              {
+                  window.alert("Please enter a valid email");
+              }
+            else
+             {
+                if(email.indexOf(".")<0)
+              {
+                  window.alert("Please enter a valid email");
+              }
+        
+             }
+            if(pw!==cw)
+            {
+                window.alert("Password is not equal");
+            }
+    
+        }
+      </script>
+        <style>
+         
+           form{
+             color:black;
+             background-color:whitesmoke;
+             height:100%;
+             width:85%;
+             margin-left:120px;
+             margin-top: 30px;
+           }
+           input{
+            width: 80%;
+            box-sizing: border-box;
+            border: none;
+            height:30px;
+            background-color:rgba(255, 255, 255, 0);
+            border-bottom:2px solid black;
+            margin-left:10%;
+            color:black;
+           }
+           label{
+            margin-left:10%;
+            font-size:25px;
+            font-style: italic;
+           }
+           h1{
+             padding-top:20px;
+             font-family:serif;
+
+           }
+           p{
+            font-size:20px;
+            font-style: italic;
+           }
+           input[type=submit]{
+       height:40px; border-radius:10px;  margin-left:45%; width:150px;font-style: italic;
+           }
+
+        </style>
+    </head>
+    <body>
+        <form action="form.php" method="POST">
+            <div class="container">
+          <h1 class="text-center text-success">SIGN UP</h1>
+          <p class="text-center">Already you have an account ...<a href="form1.html"> Sign In</a></p>
+         <div class="row">
+           <div class="col-6">
+                <label>Username</label><br><input type="text"  name="Name"  id="Name"required><br><br>
+                <label>User ID</label><br><input type="text"  name="Id" id="Id" required><br><br>
+                <label>Email</label><br> <input type="text"  name="Email" id="email"><br><br>
+                <label>New Password</label><br><input type="password"  name="New" id="new" required><br><br>
+                <label>Confirm Password</label><br><input type="password" name="Confirm" id="confirm" required><br><br>
+             </div>
+            <div class="col-6">
+               <label>DOB</label><br><input type="text"  name="Dob"id="Dob" required><br><br>
+                <label>Age</label><br><input type="text" name="Age"  id="Age" required><br><br>
+                <label>Gender</label><br><input type="text" name="Gender" id="Gender" required><br><br>
+                <label>Address</label><br><input type="text"  name="Address" id="Address"required><br><br>
+                <label>Phone number</label><br><input type="text" name="Phone" id="Phone"required><br><br><br>
+                </div>
+                </div>
+                 <input class="bg-success" type="submit" value="Sign In" onclick="check()"></div>
+        </form>
+        <br><br>
+    </body>
+    
+</html>
